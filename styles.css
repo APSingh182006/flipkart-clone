@@ -1,0 +1,15 @@
+.login-btn {
+  background-color: #fff;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+
+.login-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+login-btn:click{
+   background-color: #0d6efd;
+  color: #fff;
+
+}
