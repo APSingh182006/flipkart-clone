@@ -13,3 +13,47 @@ login-btn:click{
   color: #fff;
 
 }
+.product-img {
+  height: 220px;          /* same height for all images */
+  object-fit: contain;   /* no stretching */
+  padding: 10px;         /* Flipkart-style spacing */
+}
+.category-bar {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+
+/* IMPORTANT: prevents image collapse */
+.category-item {
+  flex: 0 0 auto;   /* = no shrink, no grow */
+  width: 90px;
+  text-align: center;
+}
+
+.category-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* Desktop behavior */
+@media (min-width: 992px) {
+  .category-bar {
+    overflow-x: visible;
+    justify-content: space-between;
+  }
+}
+
+.carousel-img {
+  height: 280px;        /* desktop height */
+  object-fit: cover;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 160px;
+  }
+}
